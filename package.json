@@ -33,8 +33,9 @@
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.4",
     "@types/react": "^17.0.15",
+    "commitlint": "^13.1.0",
     "eslint": "^7.31.0",
-    "eslint-config-next": "^11.0.1",
+    "eslint-config-next": "^11.1.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.0.1",
     "prettier": "^2.3.2",
@@ -42,6 +43,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "eslint --max-warnings=0",
       "prettier --write"
     ]
   }
